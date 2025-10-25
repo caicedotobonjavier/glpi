@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body style="justify-items: center;">
+    <h1>BIENVENIDO AL SISTEMA</h1>
+    <b>Usuario: </b>{{ request.user }} <br> <br>
+
+    <a href="http://">Ver Perfil</a> <br>
+    <a href="{% url 'users_app:actualizar' %}">Actualziar Contraseña</a> <br>
+    <a href="{% url 'users_app:logout' %}">Cerrar Sesion</a>
+</body>
+</html>
